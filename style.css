@@ -1,0 +1,105 @@
+:root {
+    --bg-black: #09050e; 
+    --purple-dark: #160a26; 
+    --purple-medium: #2d164f;
+    --purple-main: #7b2cbf; 
+    --text-light: #f8f5fc; 
+}
+
+/* Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-light);
+    background-color: var(--bg-black);
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: rgba(9, 5, 14, 0.9) !important;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--purple-medium);
+}
+.navbar-brand, .nav-link {
+    color: var(--text-light) !important;
+}
+.nav-link:hover {
+    color: var(--purple-main) !important;
+}
+
+/* Gradients Warna Antar Section */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 80px;
+    background: linear-gradient(to bottom, var(--bg-black), var(--purple-dark));
+}
+
+.about-section {
+    background: linear-gradient(to bottom, var(--purple-dark), var(--purple-medium));
+}
+
+.cert-section {
+    background: linear-gradient(to bottom, var(--purple-medium), var(--bg-black));
+}
+
+.custom-footer {
+    background-color: var(--bg-black);
+    border-top: 1px solid var(--purple-dark);
+}
+
+/* Elemen Teks & Tombol */
+.text-highlight {
+    color: #9d4edd;
+}
+
+.btn-custom {
+    background-color: var(--purple-main);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #9d4edd;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Foto Profil */
+.profile-img {
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 4px solid var(--purple-main);
+    box-shadow: 0 0 20px rgba(123, 44, 191, 0.5);
+}
+
+/* Progress Bar Kustom */
+.custom-progress {
+    background-color: var(--purple-dark);
+    height: 22px;
+    border-radius: 10px;
+}
+.custom-bar {
+    background-color: var(--purple-main);
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* Card */
+.custom-card {
+    background-color: var(--purple-dark);
+    border: 1px solid var(--purple-medium);
+    color: var(--text-light);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--purple-medium);
+}
